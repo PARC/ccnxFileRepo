@@ -31,6 +31,7 @@
 #include <LongBow/runtime.h>
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 #include <parc/algol/parc_FileChunker.h>
@@ -90,7 +91,6 @@ char *
 ccnxFileRepoCache_ToString(const CCNxFileRepoCache *repo)
 {
     char *result = NULL;
-    asprintf(&result, "Repo at %s of size %zu\n", repo->directory, repo->chunkSize);
     return result;
 }
 

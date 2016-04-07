@@ -31,6 +31,7 @@
 #include <LongBow/runtime.h>
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 
 #include <parc/algol/parc_FileChunker.h>
@@ -144,9 +145,6 @@ char *
 ccnxFileRepoManifestFetcher_ToString(const CCNxFileRepoManifestFetcher *fetcher)
 {
     char *result = NULL;
-    char *nameString = ccnxName_ToString(fetcher->locator);
-    asprintf(&result, "ccnxFileRepoManifestFetcher for %s\n", nameString);
-    parcMemory_Deallocate(&nameString);
     return result;
 }
 

@@ -85,3 +85,5 @@ target_link_libraries(ccnxFileRepo_Server ${REPO_LIBRARIES})
 
 install(TARGETS ccnxFileRepo_Client RUNTIME DESTINATION bin)
 install(TARGETS ccnxFileRepo_Server RUNTIME DESTINATION bin)
+
+add_test(EmptyTest, echo "OK")
