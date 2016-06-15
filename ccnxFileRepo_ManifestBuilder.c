@@ -135,7 +135,7 @@ ccnxManifestBuilder_BuildSkewedManifest(const CCNxManifestBuilder *builder, PARC
     PARCIterator *itr = parcChunker_ReverseIterator(chunker);
 
     // Create a hasher for the application data.
-    PARCCryptoHasher *hasher = parcCryptoHasher_Create(PARC_HASH_SHA256);
+    PARCCryptoHasher *hasher = parcCryptoHasher_Create(PARCCryptoHashType_SHA256);
     parcCryptoHasher_Init(hasher);
 
     // Initialize the per-HashGroup metadata values
